@@ -1,0 +1,156 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>防疫遙控車</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        var IP = "192.168.1.101";
+        $(document).ready(function() {
+            $("#Forward").mousedown(function() {
+                alert(`http://${IP}/Forward`);
+                window.location.replace(`http://${IP}/Forward`);
+            });
+            $("#Backward").mousedown(function() {
+                alert(`http://${IP}/Backward`);
+                window.location.replace(`http://${IP}/Backward`);
+            });
+            $("#Left").mousedown(function() {
+                alert(`http://${IP}/Left`);
+                window.location.replace(`http://${IP}/Left`);
+            });
+            $("#Right").mousedown(function() {
+                alert(`http://${IP}/Right`);
+                window.location.replace(`http://${IP}/Right`);
+            });
+            $("#Stop").mousedown(function() {
+                alert(`http://${IP}/Stop`);
+                window.location.replace(`http://${IP}/Stop`);
+            });
+            $("#RealTimeCall").mousedown(function() {});
+            $("#RealTimeVideo").mousedown(function() {});
+            $("button").mouseleave(function() {});
+        });
+        // $("#Forward ").mousedown(function() {
+        //         window.alert(`http://${IP}/Forward`);
+        //         $("#Forward").css("background-color", "black").css("color", "white");
+        //         $("div").html("<p>a</p>");
+        //     });
+    </script>
+    <style>
+        table {
+            border: 2px solid aqua;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        tr td {
+            width: 70px;
+            height: 70px;
+            text-align: center;
+            padding: 8px;
+        }
+        
+        button {
+            width: 60px;
+            height: 50px;
+            font-size: 15px;
+            text-align: center;
+            color: black;
+            background-color: transparent;
+            border: 1px solid #000;
+            transition: all .3s linear;
+        }
+        
+        iframe {
+            width: 600;
+            height: 200px;
+            background-color: beige;
+        }
+        /* table {\
+            border: 2px solid aqua;\
+            margin-left: auto;\
+            margin-right: auto;\
+        }\
+        tr td {\
+            width: 70px;\
+            height: 70px;\
+            text-align: center;\
+            padding: 8px;\
+        }\
+        iframe {\
+            width: 600;\
+            height: 200px;\
+            background-color: beige;\
+        }\
+        button {\
+            width: 60px;\
+            height: 50px;\
+            font-size: 15px;\
+            text-align: center;\
+            color: black;\
+            background-color: transparent;\
+            border: 1px solid #000;\
+            transition: all .3s linear;\
+        }\ */
+    </style>
+</head>
+
+<body>
+    <h1 style="text-align: center;">防疫遙控車UI介面</h1>
+    <!-- <div style="display: flex;"></div> -->
+    <iframe align="middle"></iframe>
+    </br>
+    <div style="text-align: center;">
+        <input type=text id="ID" style="text-align: center;">
+    </div>
+    <table>
+        <tr>
+            <td>
+                <form href="http://apple.com/">
+                    <button id="Stop" style="border: 1px solid black;border-radius:10px">急剎</button>
+                </form>
+            </td>
+            <td></td>
+            <td></td>
+            <td>
+                <form>
+                    <button id="RealTimeCall" style="border: 1px solid black;border-radius:10px">通話</button>
+                </form>
+            </td>
+            <td>
+                <form>
+                    <button id="RealTimeVideo" style="border: 1px solid black;border-radius:10px">視訊</button>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <form>
+                    <button id="Forward" style="border: 1px solid black;border-radius:10px">前進</button>
+                </form>
+            </td>
+            <td>
+                <form>
+                    <button id="Backward" style="border: 1px solid black;border-radius:10px">後退</button>
+                </form>
+            </td>
+            <td></td>
+            <td>
+                <form>
+                    <button id="Left" style="border: 1px solid black;border-radius:10px">左轉</button>
+                </form>
+            </td>
+            <td>
+                <form>
+                    <button id="Right" style="border: 1px solid black;border-radius:10px">右轉</button>
+                </form>
+            </td>
+        </tr>
+    </table>
+    <div id="text"></div>
+</body>
+
+</html>

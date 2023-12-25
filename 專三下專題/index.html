@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>自走車遙控器_table</title>
+
+    <style>
+        button {
+            color: black;
+            background-color: aquamarine;
+            width: 70px;
+            height: 70px;
+        }
+        
+        table {
+            /* border: 2px solid aqua;
+            margin-left: auto;
+            margin-right: auto; */
+            color: white;
+            width: 300px;
+            height: 300px;
+            border: 1px solid black;
+            background-color: #6495ED;
+            margin: 0px 10px;
+            /*外距，外觀調整用(以手機為準)*/
+            /*表格內容置中*/
+            text-align: center;
+        }
+        
+        iframe {
+            margin: 0px 10px;
+            /*外距，外觀調整用(以手機為準)*/
+        }
+        
+        h1 {
+            margin: 0px 0px 10px 30px;
+        }
+    </style>
+
+    <script>
+        function forward() {
+            alert("自走車向前");
+        }
+
+        function back() {
+            alert("自走車向後");
+        }
+
+        function left() {
+            alert("自走車向左");
+        }
+
+        function right() {
+            alert("自走車向右");
+        }
+
+        function c_stop() {
+            alert("自走車停止");
+        }
+    </script>
+</head>
+
+<body>
+    <h1>自走車網頁遙控器</h1>
+    <iframe></iframe>
+    <br/>
+    <br/>
+    <table>
+        <tr>
+            <td></td>
+            <td> <button id="Forward">前進</button></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>
+                <button id="Left">左轉</button></td>
+            <td>
+                <button id="Stop">急剎</button></td>
+            <td><button id="Right">右轉</button></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><button id="Backward">後退</button>
+            </td>
+            <td></td>
+        </tr>
+    </table>
+</body>
+
+</html>
