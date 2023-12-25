@@ -9,8 +9,8 @@ SoftwareSerial NodeMcu_SoftSerial(D1, D2); //ESP8266 D1(RX)->12(TX),D2(TX)->11(R
 ESP8266WebServer server(80);      //在埠口80建立網站伺服器，server是個自動的伺服器物件
 
 //wifi名稱 與 wifi密碼
-String ssid = "wifi-11F-4";       //Chen_Wei_iPhone_11_Pro_Max(172.20.10.3)、wifi-11F-4
-String password = "faychen1020";   //ivescream
+String ssid = "wifi名稱";       //ivescream
+String password = "密碼";       //ivescream
 char Send_Information;          //esp8266 arduino deliver information
 String HTML = "\
 <html lang=\"en\">\
