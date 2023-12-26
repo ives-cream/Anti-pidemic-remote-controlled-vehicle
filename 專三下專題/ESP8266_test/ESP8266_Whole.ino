@@ -5,7 +5,7 @@
 #include <ESP8266WebServer.h>
 #include <SoftwareSerial.h>
 
-SoftwareSerial NodeMcu_SoftSerial(D1, D2); //ESP8266 D1->12,D2->11
+SoftwareSerial NodeMcu_SoftSerial(D1, D2); //ESP8266 D1->12,D2->11，rxPin, txPin
 ESP8266WebServer server(80);      //在埠口80建立網站伺服器，server是個自動的伺服器物件
 
 //wifi名稱 與 wifi密碼
